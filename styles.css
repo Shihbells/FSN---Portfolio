@@ -186,23 +186,31 @@ border-bottom:1px solid var(--line)
 
 .eyebrow{
     display:inline-flex;
+    background: rgba(125, 112, 186, 0.8);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(236, 253, 255, 0.35);
+    border-radius: 20px;
+    padding: 26px;
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.12),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
     align-items:center;
     gap:8px;
     padding:6px 11px;
-    border-radius:999px;
-    background:#7D70BA;
-    color:var(--text);
+    color:var(--surface2);
     font-size:12px;
     font-weight:800;
     letter-spacing:.06em;
-    text-transform:uppercase
+    text-transform:uppercase;
 }
 
 .dot{
     width:7px;
     height:7px;
     border-radius:50%;
-    background:var(--green)
+    background:var(--green);
+    box-shadow: 0px 0px 5px white;
 }
 
 h1{
@@ -360,11 +368,12 @@ section{
 
 .panel p{
     margin:0;
-    color:var(--muted);
+    color: var(--crispy-yellow-green);
     font-size:14px
 }
 
 .resume-line{
+    color: var(--crispy-yellow-green);
     display:flex;
     justify-content:space-between;
     gap:16px;
@@ -380,6 +389,10 @@ section{
 .resume-line span:last-child{
     color:var(--muted);
     text-align:right
+}
+
+.resume-line .mini-link{
+    color: var(--water-dew);
 }
 
 .skills{
