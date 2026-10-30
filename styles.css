@@ -191,7 +191,6 @@ border-bottom:1px solid var(--line)
     -webkit-backdrop-filter: blur(20px);
     border: 1px solid rgba(236, 253, 255, 0.35);
     border-radius: 20px;
-    padding: 26px;
     box-shadow:
         0 8px 32px rgba(0, 0, 0, 0.12),
         inset 0 1px 0 rgba(255, 255, 255, 0.2);
@@ -257,13 +256,15 @@ h1 span{
     display:grid;
     place-items:center;
     font-size:50px;
-    font-weight:900
+    font-weight:900;
+    padding-left: 5px;
 }
 
 .tiny-tag{
     font-size:11px;
-    color:var(--uplifting-orange);
-    background:var(--crispy-yellow-green);
+    color: var(--accent);
+    background: var(--crispy-yellow-green);
+    box-shadow: 1px 1px 5px gray;
     padding:6px 9px;
     border-radius:999px
 }
@@ -272,25 +273,29 @@ h1 span{
     color: var(--endeavour);
     font-size:22px;
     letter-spacing:-.04em;
-    margin:0 0 6px
+    margin:0 0 6px;
+    padding-left: 10px;
 }
 
 .profile-card p{
     color:var(--muted);
     color: var(--uplifting-orange);
     font-size:13px;
-    margin:0 0 22px
+    margin:0 0 22px;
+    padding-left: 10px;
 }
 
 .statrow{
     display:grid;
     grid-template-columns:repeat(3,1fr);
-    gap:10px
+    gap:10px;
+    padding: 5px;
 }
 
 .stat{
     color: var(--water-dew);
     background:var(--wild-lime);
+    box-shadow: 1px 1px 5px gray;
     border-radius:14px;
     padding:13px 10px
 }
@@ -329,7 +334,8 @@ section{
 .section-head h2{
     font-size:clamp(28px,4vw,42px);
     letter-spacing:-.05em;
-    line-height:1.1;margin:8px 0 0
+    line-height:1.1;margin:8px 0 0;
+    text-decoration: underline;
 }
 
 .section-head p{
@@ -436,9 +442,8 @@ section{
 }
 
 .project-window .title-bar-text {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    color: black;
+    text-shadow: 1px 1px 5px white;
 }
 
 .project-window .window-body {
@@ -487,7 +492,6 @@ section{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
     flex: 1;
     padding: 18px 8px 8px;
     min-width: 0;
@@ -555,9 +559,10 @@ section{
     justify-content:space-between;
     align-items:center;
     gap:20px;
-    background: #7D70BA;
+    background: black;
     border:1px solid var(--line);
     padding:24px;
+    box-shadow: 1px 1px 5px gray;
     border-radius:20px;
     margin-bottom:18px
 }
@@ -600,10 +605,10 @@ section{
 
 .repo{
     color: var(--water-dew);
-    background: var(--endeavour);
+    background: black;
     border:1px solid var(--line);
     border-radius:16px;
-    padding:20px
+    padding:20px;
 }
 
 .repo-top{
@@ -692,17 +697,23 @@ section{
     justify-content:space-between;
     align-items:center;
     gap:20px;
-    color:var(--muted);
+    color:var(--wild-lime);
     font-size:12px
 }
 
 .footer-links{
     display:flex;
-    gap:18px
+    gap:18px;
+}
+
+.footer a:link,
+.footer a:visited {
+    color: var(--water-dew);
+    text-decoration: none;
 }
 
 .footer-links a:hover{
-    color:var(--accent)
+    color: var(--uplifting-orange);
 }
 
 .toast{
